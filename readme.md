@@ -1,6 +1,7 @@
 Админка с панелью для laravel 8
 
 Админка включает в себя собственные пакеты:
+
 https://github.com/noistudio/artcrud
 
 https://github.com/noistudio/admin-blocks
