@@ -1,4 +1,12 @@
 FROM php:8.0-apache
+
+ARG FILE_UID=1000
+ARG FILE_GID=1000
+
+RUN groupmod -g ${FILE_GID} www-data \
+    && usermod -d /var/www/html -u ${FILE_UID} -g www-data -s /bin/bash www-data \
+    && chown -R www-data:www-data /var/www/html
+
 RUN a2enmod rewrite
 RUN docker-php-ext-install mysqli pdo_mysql
 RUN apt-get update \
@@ -10,3 +18,6 @@ RUN apt-get update \
 
     &&  docker-php-ext-install gd  \
     && docker-php-ext-enable gd
+
+RUN echo 'www   ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
+USER www-data
