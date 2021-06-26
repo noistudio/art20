@@ -10,14 +10,16 @@ RUN groupmod -g ${FILE_GID} www-data \
 RUN a2enmod rewrite
 RUN docker-php-ext-install mysqli pdo_mysql
 RUN apt-get update \
+    && apt-get install -y libmagickwand-dev \
     && apt-get install -y libzip-dev libpng-dev \
     && apt-get install -y zlib1g-dev \
     && rm -rf /var/lib/apt/lists/* \
     && docker-php-ext-install zip \
     && docker-php-ext-install exif \
-
+    && pecl install imagick \
+    && docker-php-ext-enable imagick \
     &&  docker-php-ext-install gd  \
     && docker-php-ext-enable gd
 
-RUN echo 'www   ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
+RUN echo 'www-data   ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 USER www-data
