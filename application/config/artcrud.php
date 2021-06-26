@@ -71,7 +71,7 @@ return [
 
     'template_route'=>[
         'route_url_prefix'=>'/'.env('admin_prefix','admin').'/',
-        'route_name_prefix'=>env('admin_prefix','admin'),
+        'route_name_prefix'=>"admin",
         /* insert in file comment
          //insert_dynamic_routes_heere//
         */
