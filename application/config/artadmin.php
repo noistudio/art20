@@ -13,7 +13,7 @@ return [
 
     ],
     'route_after_login'=>"artadmin.index",
-    "url_prefix"=>'admin',
+    "url_prefix"=>env("admin_prefix"),
     'guard'=>'admin',
     'top_menu_right'=>[
         ["icon"=>"icon-edit","route_name"=>"artadmin.password","title"=>"current_user"],
