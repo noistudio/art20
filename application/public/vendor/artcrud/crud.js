@@ -94,6 +94,13 @@ $(document).ready(function () {
 
 
     });
+       $(".delete_all").on("click",function(){
+
+       $(".delete_form_all").submit();
+
+       return false;
+
+     });
 
     $(".btn_create_list,.btn_create_edit").on("click",function(){
         var action_url=$(".crud_form").data("action");
