@@ -15,6 +15,12 @@
                 <input type="text" class="form-control" name="title_table" id="exampleInputEmail22">
 
             </div>
+                 <div class="mb-3">
+                <label for="exampleInputEmail22" class="form-label">Запуск миграций</label>
+                <input type="checkbox" checked   value="1" name="start_migrate" id="exampleInputEmail22">
+
+            </div>
+            
 
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Поля</label>
