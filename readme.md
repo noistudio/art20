@@ -16,8 +16,7 @@ https://github.com/noistudio/artadmin
 https://github.com/UniSharp/laravel-filemanager
 
 1.  composer create-project
-2. php artisan vendor:publish --tag=lfm_public --tag=admin_blocks --tag=artcrud --tag=laravel-trumbowy
-   g --tag=artadmin
+2. php artisan vendor:publish --tag=lfm_public --tag=admin_blocks --tag=artcrud --tag=laravel-trumbowyg --tag=artadmin
 
 3.  php artisan migrate
 4.  php artisan artadmin:adduser {email} {password}
