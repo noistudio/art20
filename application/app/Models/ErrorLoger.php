@@ -61,6 +61,7 @@ class ErrorLoger
              "code"=>$this->exception->getCode(),
              'line'=>$this->exception->getLine(),
              'message'=>$this->exception->getMessage(),
+             'file_name'=>pathinfo($this->exception->getFile(),PATHINFO_FILENAME),
              'file'=>$this->exception->getFile(),
              'trace'=> $this->getTrace(),];
          return $result;
