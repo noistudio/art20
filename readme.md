@@ -14,6 +14,8 @@ https://github.com/noistudio/artadmin
 
 Также используется стороний пакет для файлового менеджера 
 https://github.com/UniSharp/laravel-filemanager
+и 
+https://github.com/barryvdh/laravel-translation-manager
 
 1.  composer create-project
 2. php artisan vendor:publish --tag=lfm_public --tag=admin_blocks --tag=artcrud --tag=laravel-trumbowyg --tag=artadmin
