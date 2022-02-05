@@ -16,6 +16,7 @@
         "noistudio/artcrud": "dev-master",
         "noistudio/laravel-trumbowyg": "dev-master",
         "unisharp/laravel-filemanager": "^2.2",
+        "mcamara/laravel-localization": "^1.6",
         "barryvdh/laravel-translation-manager": "^0.5.10"
     },
     "require-dev": {
