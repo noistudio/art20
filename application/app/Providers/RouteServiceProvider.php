@@ -7,6 +7,7 @@ use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvi
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\RateLimiter;
 use Illuminate\Support\Facades\Route;
+use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
 class RouteServiceProvider extends ServiceProvider
 {
@@ -42,6 +43,12 @@ class RouteServiceProvider extends ServiceProvider
                 ->middleware('api')
                 ->namespace($this->namespace)
                 ->group(base_path('routes/api.php'));
+            
+       //     $lk_prefix= LaravelLocalization::setLocale()."/lk";
+       //     Route::prefix($lk_prefix)->middleware('web',"site_login")
+      //          ->namespace($this->namespace)
+       //         ->group(base_path('routes/lk.php'));    
+            
 
             Route::middleware('web')
                 ->namespace($this->namespace)
