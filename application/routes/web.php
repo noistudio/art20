@@ -15,4 +15,12 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+})->name("site.index");;
+Route::group(['prefix' =>LaravelLocalization::setLocale()], function()
+{
+    Route::get('/', function () {
+    return view('welcome');
+})->name("site.index");
+
+ 
 });
