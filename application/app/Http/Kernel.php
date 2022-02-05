@@ -2,6 +2,7 @@
 
 namespace App\Http;
 
+use App\Http\Middleware\SiteLogin;
 use Artadmin\Middleware\CheckLogin;
 use Artadmin\Middleware\PermissionMiddleware;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
@@ -64,6 +65,7 @@ class Kernel extends HttpKernel
         'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
+         "site_login"=>SiteLogin::class,
         "artadmin.check_login"=>CheckLogin::class,
         'artadmin.permission'  =>  PermissionMiddleware::class,
     ];
