@@ -1,4 +1,4 @@
-FROM php:8.0-apache
+FROM php:8.0.21-apache
 
 ARG FILE_UID=1000
 ARG FILE_GID=1000

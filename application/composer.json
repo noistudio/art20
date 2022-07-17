@@ -5,11 +5,11 @@
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "require": {
-        "php": "^7.3|^8.0",
+        "php": "^8.0.2",
         "fideloper/proxy": "^4.4",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
-        "laravel/framework": "^8.40",
+        "laravel/framework": "^9.0",
         "laravel/tinker": "^2.5",
         "noistudio/admin-blocks": "dev-master",
         "noistudio/artadmin": "dev-master",
@@ -17,14 +17,14 @@
         "noistudio/laravel-trumbowyg": "dev-master",
         "unisharp/laravel-filemanager": "^2.2",
         "mcamara/laravel-localization": "^1.6",
-        "barryvdh/laravel-translation-manager": "^0.5.10"
+        "barryvdh/laravel-translation-manager": "^0.6.3"
     },
     "require-dev": {
-        "facade/ignition": "^2.5",
+        "spatie/laravel-ignition": "^1.0",
         "fakerphp/faker": "^1.9.1",
         "laravel/sail": "^1.0.1",
         "mockery/mockery": "^1.4.2",
-        "nunomaduro/collision": "^5.0",
+        "nunomaduro/collision": "^6.1",
         "phpunit/phpunit": "^9.3.3"
     },
     "autoload": {
