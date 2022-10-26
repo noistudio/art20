@@ -1,4 +1,6 @@
-Админка с панелью для laravel 9
+Админка с панелью для laravel 9 ( Mysql ) 
+Версия для Mongodb живет тут https://github.com/noistudio/art20_mongodb
+
 
 Админка включает в себя собственные пакеты:
 
